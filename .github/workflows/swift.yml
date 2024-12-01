@@ -18,4 +18,4 @@ jobs:
     - name: Convert coverage report
       run: xcrun llvm-cov export -format="lcov" .build/debug/OTPKitPackageTests.xctest/Contents/MacOS/OTPKitPackageTests -instr-profile .build/debug/codecov/default.profdata > coverage.lcov
     - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v4
+      uses: codecov/codecov-action@v5
